@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="selectCarrierCompany">
+        <item>선택하세요</item>
+        <item>LGT</item>
+        <item>KT</item>
+        <item>SKT</item>
+    </string-array>
+</resources>

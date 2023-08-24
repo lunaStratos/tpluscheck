@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/infoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="Tplus LGT/KT 사용량조회" />
+
+            <!--아이디-->
+            <EditText
+                android:id="@+id/idTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:hint="아이디"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <!--암호-->
+            <EditText
+                android:id="@+id/pwTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:hint="암호"
+                android:inputType="textPassword"
+                android:text="" />
+
+            <!--폰넘버 선택-->
+            <EditText
+                android:id="@+id/phoneNumberTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:hint="010-1234-1234"
+                android:text="" />
+
+            <!-- 폰회사선택-->
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spn_SPList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:spinnerMode="dropdown" />
+
+<!--            로그인-->
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login" />
+
+
+            <TextView
+                android:id="@+id/htmlText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="결과"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="15dp"
+                android:padding="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10sp">
+
+                        <ImageView
+                            android:id="@+id/signatureImg"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/signature"
+                            android:layout_marginRight="5sp"/>
+                        <TextView
+                            android:id="@+id/signatureInfoText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="16sp"
+                            android:text="계약 : " />
+
+                        <TextView
+                            android:id="@+id/signatureText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="16sp"
+                            android:text="Loading..." />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10sp">
+
+                        <ImageView
+                            android:id="@+id/userImg"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/user"
+                            android:layout_marginRight="5sp"/>
+                        <TextView
+                            android:id="@+id/userInfoText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="16sp"
+                            android:text="전화번호 : " />
+
+                        <TextView
+                            android:id="@+id/userText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="16sp"
+                            android:text="Loading..." />
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10sp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10sp">
+
+                </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10sp">
+
+                        <ImageView
+                            android:id="@+id/dataImg"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/phone"
+                            android:layout_marginRight="5sp"/>
+
+                        <TextView
+                            android:id="@+id/dataText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="16sp"
+                            android:text="Loading..." />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10sp">
+
+                        <ImageView
+                            android:id="@+id/mmsImg"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/message"
+                            android:layout_marginRight="5sp"/>
+
+                           <TextView
+                            android:id="@+id/mmsText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="16sp"
+                            android:text="Loading..." />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10sp">
+
+                        <ImageView
+                            android:id="@+id/voiceImg"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/call"
+                            android:layout_marginRight="5sp"/>
+
+                        <TextView
+                            android:id="@+id/voiceText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="16sp"
+                            android:text="Loading..." />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
